@@ -1,4 +1,4 @@
-# Currency App
+# AutoComplete SearchBar
 
 ### Libraries
 * [React](https://reactjs.org/)

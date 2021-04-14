@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Conbi/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Conbi/static/js/main.5442c364.chunk.js",
+    "main.js.map": "/Conbi/static/js/main.5442c364.chunk.js.map",
+    "runtime-main.js": "/Conbi/static/js/runtime-main.341a3179.js",
+    "runtime-main.js.map": "/Conbi/static/js/runtime-main.341a3179.js.map",
+    "static/js/2.a575c506.chunk.js": "/Conbi/static/js/2.a575c506.chunk.js",
+    "static/js/2.a575c506.chunk.js.map": "/Conbi/static/js/2.a575c506.chunk.js.map",
+    "static/js/3.ddaac383.chunk.js": "/Conbi/static/js/3.ddaac383.chunk.js",
+    "static/js/3.ddaac383.chunk.js.map": "/Conbi/static/js/3.ddaac383.chunk.js.map",
+    "static/js/4.38d85b30.chunk.js": "/Conbi/static/js/4.38d85b30.chunk.js",
+    "static/js/4.38d85b30.chunk.js.map": "/Conbi/static/js/4.38d85b30.chunk.js.map",
+    "static/js/5.ab3a7499.chunk.js": "/Conbi/static/js/5.ab3a7499.chunk.js",
+    "static/js/5.ab3a7499.chunk.js.map": "/Conbi/static/js/5.ab3a7499.chunk.js.map",
+    "index.html": "/Conbi/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Conbi/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.a575c506.chunk.js.LICENSE.txt": "/Conbi/static/js/2.a575c506.chunk.js.LICENSE.txt",
+    "static/js/3.ddaac383.chunk.js.LICENSE.txt": "/Conbi/static/js/3.ddaac383.chunk.js.LICENSE.txt",
+    "static/js/4.38d85b30.chunk.js.LICENSE.txt": "/Conbi/static/js/4.38d85b30.chunk.js.LICENSE.txt",
+    "static/js/5.ab3a7499.chunk.js.LICENSE.txt": "/Conbi/static/js/5.ab3a7499.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.341a3179.js",
+    "static/js/3.ddaac383.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.5442c364.chunk.js"
+  ]
+}

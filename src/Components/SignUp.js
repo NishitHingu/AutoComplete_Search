@@ -16,7 +16,7 @@ import { AuthContext } from "../Context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
 import HomeIcon from "@material-ui/icons/Home";
-import LockIcon from '@material-ui/icons/Lock';
+import LockIcon from "@material-ui/icons/Lock";
 
 const useStyles = makeStyles((theme) => ({
   formContainer: {
@@ -31,16 +31,11 @@ const useStyles = makeStyles((theme) => ({
   },
   sideBackdrop: {
     height: "100%",
-    background: `transparent
-			url('https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?cs=srgb&dl=pexels-fauxels-3183153.jpg&fm=jpg')
-			no-repeat 
-			center`,
-    backgroundSize: "cover",
-    padding: "2rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center,",
+    // padding: "2rem",
+    // display: "flex",
+    // flexDirection: "column",
+    // justifyContent: "center",
+    // alignItems: "center",
   },
   titleInfo: {
     height: "100%",
@@ -53,6 +48,11 @@ const useStyles = makeStyles((theme) => ({
   },
   bgContainer: {
     height: "100%",
+    background: `transparent
+    url('https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?cs=srgb&dl=pexels-fauxels-3183153.jpg&fm=jpg')
+    no-repeat 
+    center`,
+    backgroundSize: "cover",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -138,8 +138,12 @@ const SignIn = (props) => {
       alignItems="center"
       style={{ height: "100vh" }}
     >
-      <IconButton aria-label="home" className={classes.home}>
-        <HomeIcon onClick={() => history.push("/")} />
+      <IconButton
+        onClick={() => history.push("/")}
+        aria-label="home"
+        className={classes.home}
+      >
+        <HomeIcon />
       </IconButton>
       <Grid item xs={false} md={5} className={classes.bgContainer}>
         <div className={classes.sideBackdrop}>
@@ -172,7 +176,11 @@ const SignIn = (props) => {
           alignItems="center"
         >
           <Grid item xs={10} sm={8}>
-            <Paper elevation={0} className={classes.boxShadow} style={{ padding: "2rem 0" }}>
+            <Paper
+              elevation={0}
+              className={classes.boxShadow}
+              style={{ padding: "2rem 0" }}
+            >
               <form
                 className={classes.formContainer}
                 noValidate
@@ -247,7 +255,7 @@ const SignIn = (props) => {
                   <Grid item xs={10}>
                     <FormControl style={{ width: "100%" }} variant="outlined">
                       <InputLabel htmlFor="outlined-adornment-password">
-                        Password
+                        Confirm Password
                       </InputLabel>
                       <OutlinedInput
                         id="outlined-adornment-password"
@@ -294,7 +302,11 @@ const SignIn = (props) => {
                   </Grid>
                 </Grid>
               </form>
-              <Typography variant="body2" align="center" className={classes.switch}>
+              <Typography
+                variant="body2"
+                align="center"
+                className={classes.switch}
+              >
                 Already have a account?
                 <Typography
                   className={classes.blueText}
@@ -305,8 +317,13 @@ const SignIn = (props) => {
                   Sign-In
                 </Typography>
               </Typography>
-              <Typography variant="body2" align="center" className={classes.privacy}>
-                By clicking Create account, you agree to our Terms and have read and acknowledge our 
+              <Typography
+                variant="body2"
+                align="center"
+                className={classes.privacy}
+              >
+                By clicking Create account, you agree to our Terms and have read
+                and acknowledge our
                 <span className={classes.blueText}> Privacy Statement</span>.
               </Typography>
             </Paper>

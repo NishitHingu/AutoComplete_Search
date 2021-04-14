@@ -35,19 +35,14 @@ const useStyles = makeStyles((theme) => ({
   },
   sideBackdrop: {
     height: "100%",
+  },
+  bgContainer: {
+    height: "100%",
     background: `transparent
 			url('https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?cs=srgb&dl=pexels-fauxels-3183153.jpg&fm=jpg')
 			no-repeat 
 			center`,
     backgroundSize: "cover",
-    padding: "2rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center,",
-  },
-  bgContainer: {
-    height: "100%",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -111,8 +106,8 @@ const SignIn = (props) => {
       alignItems="center"
       style={{ height: "100vh" }}
     >
-      <IconButton aria-label="home" className={classes.home}>
-        <HomeIcon onClick={() => history.push("/")} />
+      <IconButton onClick={() => history.push("/")} aria-label="home" className={classes.home}>
+        <HomeIcon />
       </IconButton>
       <Grid item xs={false} md={5} className={classes.bgContainer}>
         <div className={classes.sideBackdrop}></div>

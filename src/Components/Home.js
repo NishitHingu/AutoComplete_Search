@@ -160,27 +160,27 @@ const Home = (props) => {
     if (firstRender) {
       setResult(data);
       setFirstRender(false);
-      return null
+      return null;
     }
-      let ans = [];
-      searchTerms.forEach((term) => {
-        if (typeof term === "object") {
-          ans.push(term);
-        } else {
-          let match = matchSorter(data, term, {
-            keys: ["Employee Name", "Designation", "State"],
-          });
-          if (match) {
-            match.forEach((el) => ans.push(el));
-          }
+    let ans = [];
+    searchTerms.forEach((term) => {
+      if (typeof term === "object") {
+        ans.push(term);
+      } else {
+        let match = matchSorter(data, term, {
+          keys: ["Employee Name", "Designation", "State"],
+        });
+        if (match) {
+          match.forEach((el) => ans.push(el));
         }
-      });
-      ans = getUnique(ans, "Employee ID"); // Removing duplicate search results
-      ans.sort(compare); // sort to keep the most matching result on top
-      setResult(ans);
-      let newSearchHistory = [...searchHistory];
-      newSearchHistory.push(searchTerms);
-      setSearchHistory(newSearchHistory);
+      }
+    });
+    ans = getUnique(ans, "Employee ID"); // Removing duplicate search results
+    ans.sort(compare); // sort to keep the most matching result on top
+    setResult(ans);
+    let newSearchHistory = [...searchHistory];
+    newSearchHistory.push(searchTerms);
+    setSearchHistory(newSearchHistory);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerms]);
 
@@ -194,9 +194,11 @@ const Home = (props) => {
   };
 
   const updateSearchTerm = (e, value) => {
-    if (value.length !== searchTerms.length) {
-      let ans = getUniqueSearchTerm(value, "Employee ID");
-      setSearchTerms(ans);
+    if (value) {
+      if (value.length !== searchTerms.length) {
+        let ans = getUniqueSearchTerm(value, "Employee ID");
+        setSearchTerms(ans);
+      }
     }
   };
 
@@ -238,6 +240,7 @@ const Home = (props) => {
     return theme.palette.tags.text[random];
   };
   const renderTags = (value, getTagProps) => {
+    console.log(value);
     let renderedTags = [];
     return value.map((option, index) => {
       if (checkRender(renderedTags, option)) {
@@ -247,7 +250,6 @@ const Home = (props) => {
             key={`tags-${index}`}
             variant="default"
             component="div"
-            // color="secondary"
             style={{
               backgroundColor: `${getBgColor(index)}`,
               color: `${getTextColor(index)}`,
@@ -360,22 +362,25 @@ const Home = (props) => {
       <Grid container justify="center" alignItems="center">
         <Grid item xs={false} sm={1}></Grid>
         <Grid item xs={9} sm={8}>
-          <Autocomplete
-            PaperComponent="Card"
-            blurOnSelect={true}
-            onChange={(e, value) => updateSearchTerm(e, value)}
-            multiple
-            id="tags-outlined"
-            options={data}
-            getOptionLabel={(options) => `${options["Employee Name"]}`}
-            filterOptions={filterOptions}
-            freeSolo
-            renderTags={renderTags}
-            renderOption={customOptions}
-            renderInput={(params) => (
-              <TextField {...params} variant="outlined" placeholder="Search" />
-            )}
-          />
+        <Autocomplete
+              blurOnSelect={true}
+              onChange={(e, value) => updateSearchTerm(e, value)}
+              multiple
+              id="tags-outlined"
+              options={data}
+              getOptionLabel={(options) => `${options["Employee Name"]}`}
+              filterOptions={filterOptions}
+              freeSolo
+              renderTags={renderTags}
+              renderOption={customOptions}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  variant="outlined"
+                  placeholder="Search"
+                />
+              )}
+            />
         </Grid>
         <Grid item xs={1}>
           <IconButton
@@ -386,7 +391,7 @@ const Home = (props) => {
           </IconButton>
         </Grid>
       </Grid>
-      <Divider style={{marginTop: "2rem", marginBottom: "-2rem"}} />
+      <Divider style={{ marginTop: "2rem", marginBottom: "-2rem" }} />
       <RenderResult result={result} />
     </div>
   );

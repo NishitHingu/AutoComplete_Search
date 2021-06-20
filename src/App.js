@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <CssBaseline />
       <AuthContextProvider>
-        <Router basename="/Conbi">
+        <Router basename="/AutoComplete_Search">
           <Switch>
           <Route exact path="/">
             <Home />

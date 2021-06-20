@@ -45,7 +45,7 @@ const ThemeContextProvider = (props) => {
     overrides: {
       MuiDrawer: {
         root: {
-          border: 0,
+          background: "#444",
         },
       },
     },

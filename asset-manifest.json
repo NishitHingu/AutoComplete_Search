@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Conbi/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Conbi/static/js/main.1f6df9bf.chunk.js",
-    "main.js.map": "/Conbi/static/js/main.1f6df9bf.chunk.js.map",
-    "runtime-main.js": "/Conbi/static/js/runtime-main.341a3179.js",
-    "runtime-main.js.map": "/Conbi/static/js/runtime-main.341a3179.js.map",
-    "static/js/2.a575c506.chunk.js": "/Conbi/static/js/2.a575c506.chunk.js",
-    "static/js/2.a575c506.chunk.js.map": "/Conbi/static/js/2.a575c506.chunk.js.map",
-    "static/js/3.ddaac383.chunk.js": "/Conbi/static/js/3.ddaac383.chunk.js",
-    "static/js/3.ddaac383.chunk.js.map": "/Conbi/static/js/3.ddaac383.chunk.js.map",
-    "static/js/4.38d85b30.chunk.js": "/Conbi/static/js/4.38d85b30.chunk.js",
-    "static/js/4.38d85b30.chunk.js.map": "/Conbi/static/js/4.38d85b30.chunk.js.map",
-    "static/js/5.ab3a7499.chunk.js": "/Conbi/static/js/5.ab3a7499.chunk.js",
-    "static/js/5.ab3a7499.chunk.js.map": "/Conbi/static/js/5.ab3a7499.chunk.js.map",
-    "index.html": "/Conbi/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Conbi/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.a575c506.chunk.js.LICENSE.txt": "/Conbi/static/js/2.a575c506.chunk.js.LICENSE.txt",
-    "static/js/3.ddaac383.chunk.js.LICENSE.txt": "/Conbi/static/js/3.ddaac383.chunk.js.LICENSE.txt",
-    "static/js/4.38d85b30.chunk.js.LICENSE.txt": "/Conbi/static/js/4.38d85b30.chunk.js.LICENSE.txt",
-    "static/js/5.ab3a7499.chunk.js.LICENSE.txt": "/Conbi/static/js/5.ab3a7499.chunk.js.LICENSE.txt"
+    "main.css": "/AutoComplete_Search/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/AutoComplete_Search/static/js/main.a0808757.chunk.js",
+    "main.js.map": "/AutoComplete_Search/static/js/main.a0808757.chunk.js.map",
+    "runtime-main.js": "/AutoComplete_Search/static/js/runtime-main.47c1fb61.js",
+    "runtime-main.js.map": "/AutoComplete_Search/static/js/runtime-main.47c1fb61.js.map",
+    "static/js/2.a575c506.chunk.js": "/AutoComplete_Search/static/js/2.a575c506.chunk.js",
+    "static/js/2.a575c506.chunk.js.map": "/AutoComplete_Search/static/js/2.a575c506.chunk.js.map",
+    "static/js/3.613d1bfc.chunk.js": "/AutoComplete_Search/static/js/3.613d1bfc.chunk.js",
+    "static/js/3.613d1bfc.chunk.js.map": "/AutoComplete_Search/static/js/3.613d1bfc.chunk.js.map",
+    "static/js/4.38d85b30.chunk.js": "/AutoComplete_Search/static/js/4.38d85b30.chunk.js",
+    "static/js/4.38d85b30.chunk.js.map": "/AutoComplete_Search/static/js/4.38d85b30.chunk.js.map",
+    "static/js/5.ab3a7499.chunk.js": "/AutoComplete_Search/static/js/5.ab3a7499.chunk.js",
+    "static/js/5.ab3a7499.chunk.js.map": "/AutoComplete_Search/static/js/5.ab3a7499.chunk.js.map",
+    "index.html": "/AutoComplete_Search/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/AutoComplete_Search/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.a575c506.chunk.js.LICENSE.txt": "/AutoComplete_Search/static/js/2.a575c506.chunk.js.LICENSE.txt",
+    "static/js/3.613d1bfc.chunk.js.LICENSE.txt": "/AutoComplete_Search/static/js/3.613d1bfc.chunk.js.LICENSE.txt",
+    "static/js/4.38d85b30.chunk.js.LICENSE.txt": "/AutoComplete_Search/static/js/4.38d85b30.chunk.js.LICENSE.txt",
+    "static/js/5.ab3a7499.chunk.js.LICENSE.txt": "/AutoComplete_Search/static/js/5.ab3a7499.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.341a3179.js",
-    "static/js/3.ddaac383.chunk.js",
+    "static/js/runtime-main.47c1fb61.js",
+    "static/js/3.613d1bfc.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.1f6df9bf.chunk.js"
+    "static/js/main.a0808757.chunk.js"
   ]
 }
